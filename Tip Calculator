@@ -1,0 +1,12 @@
+#Conversation Statements
+print("Welcome to the tip calculator!")
+total_bill = float(input("What was the total bill? "))
+tip = float(input("How much tip would you like to give? 10, 12, or 15? "))
+bill_split = float(input("How many people to split the bill? "))
+
+#math
+tip = tip / 100 * total_bill
+answer = ((total_bill + tip) / bill_split)
+
+#Answer
+print("Each person should pay: $" + str(answer))
