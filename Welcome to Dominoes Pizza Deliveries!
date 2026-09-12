@@ -1,0 +1,38 @@
+print("Welcome to Dominoes Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L: ")
+if size == ("S"):
+    pizza = 15
+elif size == ("M"):
+    pizza = 20
+elif size == ("L"):
+    pizza = 25
+else:
+    print("Invalid")
+
+
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
+if pepperoni == ("Y"):
+    if size == ("S"):
+        pizza = pizza + 2
+    elif size == ("M"):
+        pizza = pizza + 3
+    elif size == ("L"):
+        pizza = pizza + 3
+    else:
+        print("Invalid")
+elif pepperoni == ("N"):
+    pizza = pizza
+else:
+    print("Invalid")
+
+
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+if extra_cheese == ("Y"):
+    pizza = pizza + 1
+elif extra_cheese == ("N"):
+    pizza = pizza
+else:
+    print("Invalid")
+
+
+print("Your final bill is: $" + str(pizza))
