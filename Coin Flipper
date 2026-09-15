@@ -1,0 +1,8 @@
+
+import random as rng
+
+coin = rng.randint(1, 2)
+if coin == 1:
+    print("Heads")
+else:
+    print("Tails")
