@@ -5,7 +5,9 @@ user_choice = int(input())
 
 computer_choice = random.randint(0, 2)
 
-if user_choice == 0 and computer_choice == 2:
+if user_choice >= 3 or userchoice < 0:
+    print("\nYou typed an invaid number, You Lose!")
+elif user_choice == 0 and computer_choice == 2:
     print("\nYou Wins!")
 elif user_choice > computer_choice:
     print("\nYou Wins!")
@@ -15,8 +17,6 @@ elif computer_choice > user_choice:
     print("\nYou Lose!")  
 elif computer_choice == user_choice:
     print("\nYou Drawed!")
-else:
-    print("\nYou typed an invaid number, You Lose!")
 
 if computer_choice == 0:
     print("The computer chose Rock")
